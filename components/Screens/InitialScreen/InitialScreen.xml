@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="InitialScreen" extends="Group">
+    <script type="text/brightscript" uri="InitialScreen.brs" />
+
+    <children>
+        <LayoutGroup id="group" horizAlign="center" vertAlign="center">
+            <Label id="titleLabel" />
+        </LayoutGroup>
+    </children>
+</component>

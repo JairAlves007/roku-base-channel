@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="MainScene" extends="Scene">
+    <customization suspendhandler="OnMainSceneSuspend" />
+    <customization resumehandler="OnMainSceneResume" />
+
+    <script type="text/brightscript" uri="MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/components/UILogic/MainScreenLogic.brs" />
+    <script type="text/brightscript" uri="pkg:/components/UILogic/DeepLinkingLogic.brs" />
+    <script type="text/brightscript" uri="pkg:/components/UILogic/ScreenStackLogic.brs" />
+    <script type="text/brightscript" uri="pkg:/components/Tasks/LoadingScreenLogic.brs" />
+
+    <script type="text/brightscript" uri="pkg:/source/helpers/API.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/ArrayUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/Constants.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/TypeUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/MathUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/StringUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/DeviceUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/RegistryUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/Utils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/StyleGuideConfiguration.brs" />
+
+    <interface>
+        <field id="inputArgs" type="assocarray" onChange="OnInputDeepLinking" alwaysNotify="true" />
+        <field id="launchArgs" type="assocarray" onChange="OnInputDeepLinking" alwaysNotify="true" />
+    </interface>
+
+    <children>
+        <Overhang
+            id="overhang"
+            showOptions="false"
+            showClock="false"
+            visible="false"
+        />
+    </children>
+</component>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="HTTPRequestTask" extends="Task">
+  <script type="text/brightscript" uri="HTTPRequestTask.brs" />
+  <script type="text/brightscript" uri="pkg:/source/helpers/utils/Constants.brs" />
+  <script type="text/brightscript" uri="pkg:/source/helpers/utils/Utils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/helpers/utils/DeviceUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/helpers/utils/TypeUtils.brs" />
+  <script type="text/brightscript" uri="pkg:/source/helpers/utils/StringUtils.brs" />
+
+  <interface>
+    <field id="url" type="string" />
+    <field id="method" type="string" value="GET" />
+    <field id="token" type="string" />
+    <field id="body" type="string" />
+    <field id="content" type="node" alwaysNotify="true" />
+  </interface>
+
+</component>
