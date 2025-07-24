@@ -14,8 +14,6 @@ sub DoHTTPRequest()
     method = UCase(m.top.method)
     body = m.top.body
     token = m.top.token
-    apiKey = m.top.apiKey
-    serviceToken = m.top.serviceToken
 
     if StringIsEmpty(url) then
         m.top.content = result

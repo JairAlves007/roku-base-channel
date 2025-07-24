@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component name="RowListScreen" extends="Group">
+    <script type="text/brightscript" uri="RowListScreenSetup.brs" />
+    <script type="text/brightscript" uri="RowListScreenController.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/Utils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/Constants.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/DeviceUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/NavigationUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/StringUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/TypeUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/FontUtils.brs" />
+
+    <interface>
+        <field id="backScreen" type="boolean" alwaysNotify="true" />
+    </interface>
+
+    <children>
+        <LayoutGroup id="layoutGroup" layoutDirection="vert" horizAlignment="center" vertAlignment="center" itemSpacings="[12]">
+            <Label id="titleLabel" horizAlign="center" vertAlign="center" />
+            <RowList id="rowList" itemSpacing="12" />
+            <Button id="backScreenButton" />
+        </LayoutGroup>
+    </children>
+</component>

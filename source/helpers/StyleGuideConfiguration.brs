@@ -24,7 +24,7 @@ function GetStyleGuideConfiguration() as object
       gray: {
         lightest: "#E2E2E2",
         lighter: "#C5C5C5",
-        light: "#666666",
+        light: "#555555",
         medium: "#3A4044",
         neutral: "#37373C",
         dark: "#7A7A7A",
@@ -63,6 +63,12 @@ function GetStyleGuideConfiguration() as object
         dark: "#DDAE4A",
       },
       transparent: "#00000000",
+    },
+    "sizes": {
+      card: {
+        width: 416,
+        height: 260,
+      },
     },
     "fontSizes": {
       biggest: 80

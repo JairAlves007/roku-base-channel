@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<component name="InitialScreen" extends="Group">
+<component name="InitialScreen" extends="Group" initialFocus="nextScreenButton">
     <script type="text/brightscript" uri="InitialScreen.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/Constants.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/DeviceUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/FontUtils.brs" />
+
+    <interface>
+        <field id="nextScreen" type="boolean" alwaysNotify="true" />
+    </interface>
 
     <children>
-        <LayoutGroup id="group" horizAlign="center" vertAlign="center">
-            <Label id="titleLabel" />
+        <LayoutGroup id="layoutGroup" layoutDirection="vert" horizAlignment="center" vertAlignment="center" itemSpacings="[12]">
+            <Label id="titleLabel" horizAlign="center" vertAlign="center" />
+            <Label id="descriptionLabel" horizAlign="center" vertAlign="center" />
+            <Button id="nextScreenButton" />
         </LayoutGroup>
     </children>
 </component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="CardItem" extends="Group">
+    <script type="text/brightscript" uri="CardItem.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/Utils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/DeviceUtils.brs" />
+    <script type="text/brightscript" uri="pkg:/source/helpers/utils/FontUtils.brs" />
+
+    <interface>
+        <field id="itemContent" type="node" onChange="OnContentSet" />
+        <field id="focusPercent" type="float" onChange="OnFocusPercentChanged" />
+        <field id="itemHasFocus" type="boolean" onChange="OnItemHasFocus" />
+        <field id="rowHasFocus" type="boolean" onChange="OnRowHasFocus" />
+        <field id="gridHasFocus" type="boolean" onChange="OnRowHasFocus" />
+        <field id="listHasFocus" type="boolean" onChange="OnRowHasFocus" />
+        <field id="simulateFocus" type="boolean" value="false" />
+        <field id="rowListHasFocus" type="boolean" onChange="OnRowListHasFocus" />
+    </interface>
+
+    <children>
+        <Rectangle id="cardItemContainer">
+            <MaskGroup id="cardItemBaseMask" maskUri="pkg:/images/masks/background_mask.png" />
+
+            <MaskGroup id="cardItemImageMask" maskUri="pkg:/images/masks/background_mask.png">
+                <Poster id="cardItemImage" />
+            </MaskGroup>
+
+            <MaskGroup id="cardItemBorderFocusMask" maskUri="pkg:/images/masks/border_focus_mask.png" />
+        </Rectangle>
+    </children>
+</component>

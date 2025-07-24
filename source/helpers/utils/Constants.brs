@@ -3,7 +3,8 @@ function Constants() as object
     CHARS: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
     HEXCHARS: "0123456789ABCDEF",
     SHOW_TYPE: "tv_show",
-    WELCOME_TEXT: "Welcome to my base channel!",
+    WELCOME_TITLE: "Welcome to my channel!",
+    WELCOME_DESCRIPTION: "This is a base channel to easily get started!",
     API: {
       ERROR_MESSAGE: "An error occurred while processing your request. Try again soon.",
       SUCCESS_MESSAGE: "Request completed successfully.",
